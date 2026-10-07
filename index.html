@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script><title>Seatwork 1 Q2</title>
 </head>
+<style>
+    *  {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(
+            135deg,/* direction of da gradient  */
+            #4f9cf9,
+            #6675f5,
+            #b58cf6,
+            #bde5f5
+        );
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        background: white;
+        width: 380px;
+        padding: 35px 40px;
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    label {
+        color: #555;
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;;
+    }
+
+    button {
+        width: 100%;
+        padding: 13px;
+        border: none;
+        border-radius: 8px;
+        background: #5d6eea;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    button:hover {
+      background: #4e5ed8;
+    }
+
+    #result {
+        text-align: center;
+        margin-top: 20px;
+        color: #555;
+        font-size: 14px;
+    }
+</style>
+
+
 <body>
-    
+<div class="box">
+    <h1>ICT Club Membership</h1>
+    <p style="text-align: center; font-size: 15px; color:#4e5ed8; margin-bottom: 35px;">Candidate Verification System</p>
+
+    <label>First Name:</label>
+    <input type="text" id="firstname">
+
+    <br><br>s
+
+    <label>Last Name:</label>
+    <input type="text" id="lastname">
+
+    <br><br>
+
+    <button py-click="check_member">Check Membership</button>
+
+    <p id="result"></p>
+    <script type="py" src="main.py"></script>
+</div>
 </body>
 </html>
